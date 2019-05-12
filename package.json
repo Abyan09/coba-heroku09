@@ -4,13 +4,13 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "deploy:gh": "ng build --prod --base-href='https://username.github.io/repository/' && sudo ngh",
-    "postinstall": "ng build --output-path coba-heroku09-app --aot --prod"
+    "postinstall": "ng build --aot -prod"
   },
   "engines": {
     "node": "v10.15.1",
